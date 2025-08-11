@@ -1,18 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Codee Project</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Lion's Jungle Run</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+  <header>
+    <h1>Lion's Jungle Run</h1>
+  </header>
+
   <main>
-    <h1>Welcome to Codee Project</h1>
-    <p>This is a tiny demo with HTML, CSS and JavaScript.</p>
-    <button id="btn">Click me</button>
-    <div id="output"></div>
+    <canvas id="gameCanvas" width="800" height="400"></canvas>
+    <div class="hud">
+      <p id="score">Score: 0</p>
+      <button id="restartBtn" hidden>Restart</button>
+      <p class="instructions">Use UP and DOWN arrow keys (or W / S) to move the lion</p>
+    </div>
   </main>
+
+  <footer>
+    <small>Made with ❤️ — simple starter game</small>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
